@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'funapp-20'
         slot-name: 'staging'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_159fde6b50724d52b1dd64d5924508aa }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_eaef4efd39184f57914e6f983ea332b4 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
