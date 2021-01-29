@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.301'
+        dotnet-version: '2.1.807'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'funapp-20'
         slot-name: 'staging'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_eaef4efd39184f57914e6f983ea332b4 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6a650ea5eb8e442b9f1fc67fc4da165a }}
         package: ${{env.DOTNET_ROOT}}/myapp 
